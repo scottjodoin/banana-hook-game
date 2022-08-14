@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Banana Game</title>
+</head>
+<body>
+  <header>
+    <strong>Banana Game</strong>
+    <label for=banana-count >Number of bananas:</label>
+    <input id=banana-count name=dot-count min=1 max=100 value=10 type="number" />
+    <!-- <select id=difficulty name=difficulty value=easy>
+      <option value=easy>Easy mode</option>
+      <option value=hard>Hard mode</option>
+      <option value=extreme>Extreme Mode</option>
+    </select> -->
+    <button id=start-game>Start Game</button>
+  </header>
+  <div id=game-container>
+    <canvas id=game width=1000 height=600 tabindex=0>
+
+    </canvas>
+  </div>
+  <div id=img-container style="display:none">
+  <img id=img-banana1 src="banana1.png">
+  <img id=img-banana2 src="banana2.png">
+  <img id=img-hook src="hook.png">
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
